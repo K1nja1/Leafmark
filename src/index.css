@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:opsz,wght@5..1200,600;5..1200,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme { --font-display: "Playfair Display", serif; --font-sans: "Plus Jakarta Sans", sans-serif; --color-ink: #17312b; --color-forest: #235b4e; --color-cream: #f7f3eb; --color-coral: #e8775c; }
+body { @apply bg-cream font-sans text-ink antialiased; }

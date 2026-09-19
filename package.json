@@ -1,0 +1,28 @@
+{
+  "name": "leafmark-book-recommendations",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A book discovery site powered by Express and Open Library.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"vite\" \"node --watch server.js\"",
+    "build": "vite build",
+    "db:migrate": "node scripts/migrate.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.5",
+    "concurrently": "^10.0.5",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.1"
+  }
+}
