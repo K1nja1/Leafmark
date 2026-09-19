@@ -12,7 +12,7 @@ const OPEN_LIBRARY = 'https://openlibrary.org';
 const googleKey = process.env.GOOGLE_BOOKS_API_KEY;
 const db = process.env.DATABASE_URL ? new Pool({ connectionString: process.env.DATABASE_URL }) : null;
 const jwtSecret = process.env.JWT_SECRET || 'development-only-secret-change-me';
-const BISAC_PATH = path.join(__dirname, '6542197-0f310e70fe0395ad6ab8b3891f8aafdb840de7d0', 'bisac.csv');
+const BISAC_PATH = path.join(__dirname, 'data', 'bisac.csv');
 const BISAC_BY_CODE = new Map(fs.readFileSync(BISAC_PATH, 'utf8').trim().split(/\r?\n/).map((line) => {
   const comma = line.indexOf(',');
   return [line.slice(0, comma), line.slice(comma + 1).replace(/^"|"$/g, '')];
